@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #db0000;
+            color: white;
+            padding: 10px;
+        }
+        .header img {
+            width: 150px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header .left-text,
+        .header .right-text {
+            flex: 1;
+            text-align: right;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        .header .left-text {
+            text-align: left;
+        }
+        .header .right-text {
+            text-align: right;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .buttons button {
+            background: #16cab2;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            border: none;
+            padding: 15px 30px;
+            margin: 40px 0;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s;
+            width: 300px;
+            border-radius: 20px;
+
+        }
+        .buttons button:nth-child(2) {
+            background-color: #e91e63;
+        }
+        .buttons button:nth-child(3) {
+            background-color: #a597e6;
+            color: black;
+        }
+        .buttons button:nth-child(4) {
+            background-color: #4caf50;
+        }
+        .buttons button:hover {
+            opacity: 0.8;
+        }
+        .return-button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            align-self: flex-end;
+        }
+        .return-button:hover {
+            background-color: #333;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left-text">빠타나 학교에 환영합니다</div>
+        <img src="PNSLogos.png" alt="School Logo">
+        <div class="right-text">끊임없이 공부한다</div>
+    </header>
+
+    <div class="container">
+        <div class="buttons">
+            <a href="파타나 학교 역사.html">
+                <button>빠타나 학교 역사</button>
+            </a>
+            <a href="파타나 학교 정보.html">
+                <button>빠타나 학교 정보</button>
+            </a>
+            <a href="학교안에 활동.html">
+                <button>학교안에 활동</button>
+            </a>
+            <a href="학교밖에 활동.html">
+                <button>학교밖에 활동</button>
+            </a>
+        </div>
+
+    </div>
+    <a href="index.html">
+        <button class="return-button" onclick=" ">홈 돌아오기</button>
+    </a> 
+</body>
+</html>

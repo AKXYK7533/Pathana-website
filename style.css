@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo-area img{
+    width: 150px;
+    height: 150px;
+    position:absolute;
+    left: 50%;
+    top: 10;
+    content:"";
+    margin-left: -100px;
+    margin-top: 50px;
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(PNSG2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    filter: blur(5px);
+}
+.container{
+    width: 85vmin;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 50%;
+    overflow: hidden;
+    border: 10px solid white;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+}
+.wrapper{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman';
+    color: rgb(34, 31, 31);
+    margin: 1p;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: tranlateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-220%);
+    }
+    75%{
+        transform: translateX(-220%);
+    }
+    80%{
+        transform: translateX(-330%);
+    }
+    100%{
+        transform: translateX(-330%);
+    }
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px; /* Space between header and buttons */
+    gap: 20px;
+}
+.btn--primary{
+    background: dodgerblue;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 30px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.4s, transform 0.4s;
+    font-weight: 600;
+    width: 400px;
+}

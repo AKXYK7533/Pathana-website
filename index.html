@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .slideshow-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            filter: blur(2px);
+        }
+        .slideshow-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            background-size: cover;
+            background-position: center;
+        
+        }
+        .slideshow-slide.active {
+            opacity: 1;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+        .content h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .content img {
+            width: 150px;
+            display: block;
+            margin: 20px auto;
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .buttons button {
+            background-color: #0044cc;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 0 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            border-radius: 5px;
+            font-family: 'Noto Sans Lao', sans-serif;
+        }
+        .buttons button:nth-child(2) {
+            background-color: #e91e63;
+        }
+        .buttons button:nth-child(3) {
+            background-color: #ffeb3b;
+            color: black;
+        }
+        .buttons button:hover {
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slideshow-slide" style="background-image: url('PNSG1.jpg');"></div>
+        <div class="slideshow-slide" style="background-image: url('PNSG2.jpg');"></div>
+        <div class="slideshow-slide" style="background-image: url('Singapo2.jpg');"></div>
+        <div class="slideshow-slide" style="background-image: url('SingapoTrip1.jpg');"></div>
+        <div class="slideshow-slide" style="background-image: url('USA1.jpg');"></div>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to Pathana School</h1>
+        <img src="PNSLogos.png" alt="School Logo">
+        <div class="buttons">
+            <a href="indexEnglish.html">
+                <button>English</button>
+            </a> 
+            <a href="indexLao.html">
+                <button>ພາສາລາວ</button>
+            </a> 
+            <a href="indexKorean.html">
+                <button>한국어</button>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slideshow-slide');
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.style.opacity = '0';
+                slide.classList.remove('active');
+            });
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.opacity = '1';
+            slides[slideIndex - 1].classList.add('active');
+            setTimeout(showSlides, 5000); // Change slide every 5 seconds
+        }
+
+        showSlides();
+    </script>
+</body>
+</html>

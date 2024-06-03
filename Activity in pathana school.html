@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Lao', sans-serif;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0044cc;
+            color: white;
+            padding: 10px;
+        }
+        .header img {
+            width: 150px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .image-container {
+            display: inline-grid;
+        }
+        .image-container img {
+            width: 250px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container img.enlarged {
+        	width: 1000px;
+            transform: scale(2);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+        .return-button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            align-self: flex-end;
+           }
+        .return-button:hover {
+            background-color: #333;
+           }
+    </style>
+  <meta charset="UTF-8">
+  <title>Activity in Pathana school</title>
+</head>
+<body>
+    <header class="header">
+        <img src="PNSLogos.png" alt="School Logo">
+    </header>
+<h1>Activity in Pathana school</h1>
+<details>
+	<summary>2024</summary>
+			<details>
+		<summary>May 19</summary>
+		<iframe src="allcode/Ecoding2024/2024.05.19.html" width="1000" height="700"></iframe>
+	</details>
+			<details>
+		<summary>May 10</summary>
+		<iframe src="allcode/Ecoding2024/2024.05.10.html" width="1000" height="500"></iframe>
+	</details>
+			<details>
+		<summary>May 09</summary>
+		<iframe src="allcode/Ecoding2024/2024.05.09.html" width="1000" height="700"></iframe>	
+	</div>
+	</details>
+			<details>
+		<summary>April 25</summary>
+		<iframe src="allcode/Ecoding2024/2024.04.25.html" width="1000" height="700"></iframe>
+	</div>
+	</details>
+			<details>
+		<summary>April 22</summary>
+        <iframe src="allcode/Ecoding2024/2024.04.22.html" width="1000" height="700"></iframe>  
+	</div>
+	</details>
+			<details>
+		<summary>April 12</summary>
+		<iframe src="allcode/Ecoding2024/2024.04.12.html" width="1000" height="700"></iframe>
+	</div>
+	</details>
+		<details>
+		 <summary>April 10</summary>
+         <iframe src="allcode/Ecoding2024/2024.04.10.html" width="1000" height="700"></iframe>
+	</details>
+		<details>
+		 <summary>April 08</summary>
+         <iframe src="allcode/Ecoding2024/2024.04.08.html" width="1000" height="700"></iframe>
+	</details>
+		<details>
+		 <summary>March 25-29</summary>
+         <iframe src="allcode/Ecoding2024/2024.03.25-29.html" width="1000" height="700"></iframe>
+	</details>
+		<details>
+		 <summary>March 25</summary>
+		 <iframe src="allcode/Ecoding2024/2024.03.25.html" width="1000" height="700"></iframe>
+
+	</details>
+		<details>
+		 <summary>March 22</summary>
+		 <iframe src="allcode/Ecoding2024/2024.03.22.html" width="1000" height="700"></iframe>
+	</details>
+		<details>
+		 <summary>March 19</summary>
+		 <iframe src="allcode/Ecoding2024/2024.03.19.html" width="1000" height="700"></iframe>
+
+	</details>
+		<details>
+		 <summary>March 17</summary>
+		 <iframe src="allcode/Ecoding2024/2024.03.17.html" width="1000" height="700"></iframe>
+
+	</details>
+		<details>
+		 <summary>March 15</summary>
+		 <iframe src="allcode/Ecoding2024/2024.03.15.html" width="1000" height="700"></iframe>
+
+	</details>
+		<details>
+		 <summary>March 14</summary>
+		 <iframe src="allcode/Ecoding2024/2024.03.14.html" width="1000" height="700"></iframe>
+
+	</details>
+</details>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const images = document.querySelectorAll('.image-container img');
+        
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                image.classList.toggle('enlarged');
+            });
+        });
+    });
+</script>
+    <a href="indexEnglish.html">
+        <button class="return-button" onclick=" ">Return</button>
+    </a>
+</body>
+</html>
