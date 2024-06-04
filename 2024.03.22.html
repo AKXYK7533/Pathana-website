@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Lao', sans-serif;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .image-container {
+            display: inline-grid;
+        }
+        .image-container img {
+            width: 250px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container img.enlarged {
+          width: 1000px;
+            transform: scale(2);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+    </style>
+  <meta charset="UTF-8">
+  <title>2024.03.22</title>
+</head>
+<body>
+    <p>ພິທີຮັບສະມາຊິກສະຫະພັນແມ່ຍິງຊູດໃໝ່ ຂອງໂຮງຮຽນປາດຖະໜາ ເຊິ່ງໄດ້ຈັດຂຶ້ນໃນວັນທີ 22/03/2024 ທີ່ສະໂມສອນ ໂຮງຮຽນ ປາດຖະໜາ.
+ໂດຍໃຫ້ກຽດເຂົ້າຮ່ວມພິທີທ່ານ ບຸນຕີ ສິດທິນົນທອງ ຜູ້ປະກອບການ ແລະ ທີ່ປຶກສາສູງສຸດຂອງໂຮງຮຽນ ແລະ ທ່ານ ພຸດທະດາ ສິດທິນົນທອງ ຜູ້ອໍານວຍການຊັ້ນອະນຸບານ-ປະຖົມໂຮງຮຽນ, ພ້ອມດ້ວຍວິຊາການ, ປະທານສະຫະພັນແມ່ຍິງ, ຄະນະສະຫະພັນແມ່ຍິງຮາກຖານໂຮງຮຽນປາດຖະໜາ, ທີ່ປຶກສາຂັ້ນອົງການຈັດຕັ້ງ, ຫົວໜ້າອົງການຈັດເຍົາວະຊົນ-ຊາວໜຸ່ມໂຮງຮຽນ ແລະ ນ້ອງນັກຮຽນພາຍໃນໂຮງຮຽນໄດ້ເປັນກຽດເຂົ້າຮ່ວມຢ່າງພ້ອມພຽງ.
+ສຳລັບການຮັບແມ່ຍິງຊູດໃໝ່ໃນຄັ້ງນີ້ແມ່ນມີຈຳນວນທັງໝົດ 51 ນ້ອງ.
+
+
+  </p>
+    <div class="container">
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/03.22/03.22.1.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/03.22/03.22.2.jpg" >
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/03.22/03.22.3.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/03.22/03.22.4.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/03.22/03.22.5.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/03.22/03.22.6.jpg">
+      </div>
+  </div><script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const images = document.querySelectorAll('.image-container img');
+        
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                image.classList.toggle('enlarged');
+            });
+        });
+    });
+</script>
+</body>
+</html>

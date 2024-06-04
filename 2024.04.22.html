@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Lao', sans-serif;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .image-container {
+            display: inline-grid;
+        }
+        .image-container img {
+            width: 250px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container img.enlarged {
+          width: 1000px;
+            transform: scale(2);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+    </style>
+  <meta charset="UTF-8">
+  <title>2024.04.22</title>
+</head>
+<body>
+    <p>ໂຮງຮຽນປາດຖະໜາໄດ້ຈັດພິທີມອບລາງວັນໃຫ້ແກ່ນ້ອງນັກຮຽນເກັ່ງຊັ້ນ ປ.5, ມ.4 ແລະ ມ.7 ຂັ້ນເມືອງ, ຂັ້ນນະຄອນຫຼວງ ແລະ ຂັ້ນລະດັບຊາດ ປະຈຳສົກຮຽນ 2023-2024.</p>
+    <div class="container">
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.22/04.22.1.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.22/04.22.2.jpg" >
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.22/04.22.3.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.22/04.22.4.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.22/04.22.5.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.22/04.22.6.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.22/04.22.7.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.22/04.22.8.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.22/04.22.9.jpg">
+      </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const images = document.querySelectorAll('.image-container img');
+        
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                image.classList.toggle('enlarged');
+            });
+        });
+    });
+</script>
+</body>
+</html>

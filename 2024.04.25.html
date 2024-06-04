@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Lao', sans-serif;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .image-container {
+            display: inline-grid;
+        }
+        .image-container img {
+            width: 250px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container img.enlarged {
+          width: 1000px;
+            transform: scale(2);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+    </style>
+  <meta charset="UTF-8">
+  <title>2024.04.25</title>
+</head>
+<body>
+    <p>ໃນວັນທີ 25/04/2024 ຄະນະຄູອາຈານ ແລະ ນ້ອງນັກຮຽນ ຈາກໂຮງຮຽນສາທິດເທດສະບານບ້ານຫົວຫິນ ປະເທດໄທ ໄດ້ມາແລກປ່ຽນການຮຽນ-ການສອນ ກັບ ໂຮງຮຽນປາດຖະໜາ ແລະ ຍັງໄດ້ເຮັດກິດຈະກໍາຮ່ວມກັນ ເຊິ່ງເຕັມໄປດ້ວຍຄວາມຄຶກຄື້ນ ຄວາມມ່ວນຊື່ນ ແລະ ມິດຕິພາບອັນດີງາມ</p>
+    <div class="container">
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.1.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.2.jpg" >
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.3.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.4.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.5.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.6.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.7.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.8.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.9.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.10.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.11.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.12.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.13.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.14.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/04.25/04.25.15.jpg">
+      </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const images = document.querySelectorAll('.image-container img');
+        
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                image.classList.toggle('enlarged');
+            });
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Lao', sans-serif;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .image-container {
+            display: inline-grid;
+        }
+        .image-container img {
+            width: 250px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container img.enlarged {
+          width: 1000px;
+            transform: scale(2);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+    </style>
+  <meta charset="UTF-8">
+  <title>2024.03.25</title>
+</head>
+<body>
+    <p>ໃນວັນທີ່ 25/03/2024 ທີມງານ ກໍາລັງໃຈ ไດ້ມານໍາສະເໜີກ່ຽວກັບການດູແລສຸຂະພາບຈິດຂອງໄວໜຸ່ມ ແລະ ຮຽນຮູ້ກ່ຽວກັບຄວາມສໍາຄັນຂອງສຸຂະພາບຈິດ ໃຫ້ກັບບັນດານ້ອງໆນັກຮຽນຊັ້ນ ມ.6 ແລະ ມ.7 ພາບບັນຍາກາດເຕັມໄປດ້ວຍຄວາມມ່ວນຊື່ນ ແລະ ຄຶກຄື້ນ.
+
+  </p>
+    <div class="container">
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/03.25.1/03.25.1.1.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/03.25.1/03.25.1.2.jpg" >
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/03.25.1/03.25.1.3.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/03.25.1/03.25.1.4.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/03.25.1/03.25.1.5.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/03.25.1/03.25.1.6.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="AC2024/03.25.1/03.25.1.7.jpg">
+      </div>
+  </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const images = document.querySelectorAll('.image-container img');
+        
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                image.classList.toggle('enlarged');
+            });
+        });
+    });
+</script>
+</body>
+</html>
