@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Lao', sans-serif;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .image-container {
+            display: inline-grid;
+        }
+        .image-container img {
+            width: 250px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container img.enlarged {
+          width: 1000px;
+            transform: scale(2);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+    </style>
+  <meta charset="UTF-8">
+  <title>2024.05.11</title>
+</head>
+<body>
+<p>Hello Singapore ກັບຄູອາຈານ ແລະ ນັກຮຽນເກັ່ງ!
+ໂຮງຮຽນປາດຖະໜາໄດ້ໃຫ້ລາງວັນແກ່ຄູ ແລະ ນັກຮຽນເກັ່ງ ທີ 1 ລະດັບຊາດ, ຄູສອນນັກຮຽນເກັ່ງ ທີ 1 ລະດັບນະຄອນຫຼວງສາມປີຊ້ອນ ແລະ ນັກຮຽນເກັ່ງລະດັບອາຊຽນ ໂດຍການນຳພາໄປທັດສະນະທີ່ປະເທດສິງກະໂປ ໃນວັນທີ 11-14/05/2024. ໃນການເດີນທາງຄັ້ງນີ້ ທຸກຄົນໄດ້ທ່ຽວຊົມ ແລະ ມ່ວນຊື່ນໄປກັບສະຖານທີ່ໆສຳຄັນຕ່າງໆ ພ້ອມທັງໄດ້ຮຽນຮູ້ ແລະເກັບກຳປະສົບການໃໝ່ໆທີ່ເປັນບົດຮຽນອັນເປີດໂລກກວ້າງໃຫ້ແກ່ນ້ອງໆອີກດ້ວຍ.
+ຫວັງວ່າຄູອາຈານ ແລະ ນ້ອງໆຈະສືບຕໍ່ພັດທະນາຕົນເອງໃຫ້ເກັ່ງຂຶ້ນໄປເລື້ອຍໆ ແລະ ເປັນແບບຢ່າງທີ່ດີໃຫ້ລຸ້ນນ້ອງໄດ້ນຳຮອຍໃນອະນາຄົດ.
+ </p>
+    <div class="container">
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/05.11-14/05.11.1.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/05.11-14/05.11.2.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/05.11-14/05.11.3.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/05.11-14/05.11.4.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/05.11-14/05.11.5.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/05.11-14/05.11.6.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/05.11-14/05.11.10.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/05.11-14/05.11.8.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/05.11-14/05.11.9.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/05.11-14/05.11.7.jpg">
+      </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const images = document.querySelectorAll('.image-container img');
+        
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                image.classList.toggle('enlarged');
+            });
+        });
+    });
+</script>
+</body>
+</html>

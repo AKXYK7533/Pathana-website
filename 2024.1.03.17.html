@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Lao', sans-serif;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .image-container {
+            display: inline-grid;
+        }
+        .image-container img {
+            width: 250px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container img.enlarged {
+          width: 1000px;
+            transform: scale(2);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+    </style>
+  <meta charset="UTF-8">
+  <title>2024.03.17</title>
+</head>
+<body>
+<p>ພິທີສະຫຼຸບການແຂ່ງຂັນນັກຮຽນເກັ່ງ ຂັ້ນເມືອງໄຊເສດຖາ ປະຈຳສົກຮຽນ 2023-2024, ໃນນີ້ ໂຮງຮຽນ ປາດຖະໜາ ໄດ້ ລາງວັນແຕ່ລະປະເພດ ດັ່ງລຸ່ມນີ້ : <br>
++ ນັກຮຽນທີ່ໄດ້ອັນດັບ 1<br>
+- ວິຊາ ຄະນິດສາດ ຊັ້ນ ປ5: ທ້າວ ໄຊຍະພົງ ສິດທິພົງ<br>
+- ວິຊາ ຄະນິດສາດ ຊັ້ນ ປ5: ນາງ ອິນທິດາ ສຸວັນນະລັງສີ<br>
+- ວິຊາ ຄະນິດສາດ ຊັ້ນ ປ5: ທ້າວ ປານວິໄລ ມະຫາໄຊ<br>
+- ວິຊາ ວິທະຍາສາດ ແລະ ສິ່ງເເວດລ້ອມ ຊັ້ນ ປ5: ນາງ ສຸພາພອນ ພິມພົງພັນ<br>
+- ວິຊາ ພາສາລາວ ຊັ້ນ ມ4: ນາງ ປາຢົງ ທ່າວເຈີດຈິງ<br>
+- ວິຊາ ຄະນິດສາດ ຊັ້ນ ມ4: ນາງ ນາງປາວີນາ ໄຊຍະເດດ<br>
+- ວິຊາ ພາສາລາວ-ວັນນະຄະດີ ຊັ້ນ ມ7: ນາງ ດາວຈັນ ໄຊຍະຈັກ <br>
+- ວິຊາ ເຄມີສາດ ຊັ້ນ ມ7 : ນາງ ສຸພະໄພ ຊິນນະວົງ<br>
+- ວິຊາ ຟີຊິກສາດ ຊັ້ນ ມ7 : ນາງ ອາລີເຊຍ ຊາພັກດີ<br>
++ ນັກຮຽນທີ່ໄດ້ອັນດັບ 2<br>
+- ວິຊາ ຄະນິດສາດ ຊັ້ນ ປ5: ນາງ ຈິດປະສົງ ໄຊຍະລາດ<br>
+- ວິຊາ ວິທະຍາສາດ ແລະ ສິ່ງເເວດລ້ອມ ຊັ້ນ ປ5: ນາງ ວານິດາ ອິນທະວົງ<br>
+- ວິຊາ ເຄມີສາດ ຊັ້ນ ມ4: ນາງ ວັນນິດາ ໄຊຍະສົມພູ<br>
+- ວິຊາ ຄະນິດສາດ ຊັ້ນ ມ7: ນາງ ທິບພະວັນ ອິນມະນີ<br>
+- ວິຊາ ຟີຊິກສາດ ຊັ້ນ ມ7: ນາງ ທັບທິມ ອຸດົມທິບ <br>
++ ນັກຮຽນທີ່ໄດ້ອັນດັບ 03<br>
+- ວິຊາ ຄະນິດສາດ ຊັ້ນ ປ5: ທ້າວ ໄຊຍະພອນ ຄົດສຸດີ<br>
+- ວິຊາ ພາສາລາວ ຊັ້ນ ມ4: ນາງ ເມລິສາ ໄຊສື<br>
+- ວິຊາ ເຄມີສາດ ຊັ້ນ ມ4 : ທ້າວ ໄຊພອນ ເພັດວົງສອນ<br>
+- ວິຊາ ພາສາລາວ-ວັນນະຄະດີ ຊັ້ນ ມ7 : ນາງ ດາວເຮືອງ ອໍລະດົມ <br>
++ ນັກຮຽນທີ່ໄດ້ອັນດັບຊົມເຊີຍ<br>
+- ວິຊາ ພາສາລາ-ວັນນະຄະດີ ຊັ້ນ ປ5 : ທ້າວ ໄຊຊະນະ ພອນຄໍາມາ<br>
+- ວິຊາ ຄະນິດສາດ ຊັ້ນ ປ5: ທ້າວ ພົມວິໄລ ພົນນະສານ<br>
+- ວິຊາ ຄະນິດສາດ ຊັ້ນ ປ5 : ທ້າວ ພຸດທະຄອນ ໂຄດປະທີບ <br>
+- ວິຊາ ວິທະຍາສາດ ແລະ ສິ່ງເເວດລ້ອມ ຊັ້ນ ປ5: ນາງ ທິບພະໄຊ ຫຼວງບົວທອງ <br>
+- ວິຊາ ວິທະຍາສາດ ແລະ ສິ່ງເເວດລ້ອມ ຊັ້ນ ປ5 : ນາງ ບຸນຖະໜອມ ທິບພະຄຸນ <br>
+- ວິຊາ ວິທະຍາສາດ ແລະ ສິ່ງເເວດລ້ອມ ຊັ້ນ ປ5: ນາງ ຟ້າລຸ້ງສະຫວັນ ພົມມະວົງສີ<br>
+- ວິຊາ ພາສາລາວ-ວັນນະຄະດີ ຊັ້ນ ມ4: ນາງ ສຸນິສາ ຄໍາເພັງໄຊ <br>
+- ວິຊາ ພາສາລາວ-ວັນນະຄະດີ ຊັ້ນ ມ4: ນາງ ພຸດທະໄລ ຈັນທະວັງໂສ<br>
+- ວິຊາ ພາສາລາວ-ວັນນະຄະດີ ຊັ້ນ ມ4: ນາງອັກສອນສະຫວັນ ພັນທະວີ<br>
+- ວິຊາ ພາສາລາວ-ວັນນະຄະດີ ຊັ້ນ ມ4: ນາງ ນໍ້າຝົນ ແສງດາລາ <br>
+- ວິຊາ ຄະນິດສາດ ຊັ້ນ ມ4: ທ້າວ ພຸດສະກອນ ສຸວັນນະເເສງ <br>
+- ວິຊາ ຄະນິດສາດ ຊັ້ນ ມ4: ນາງ ເຂັມເພັດ ເຊີງ<br>
+- ວິຊາ ເຄມີສາດ ຊັ້ນ ມ4: ນາງ ເພັດມະນີ ສຸດສະຫວັດ<br>
+- ວິຊາ ເຄມີສາດ ຊັ້ນ ມ4: ນາງ ວານິດາ ສຸລິນທອງ<br>
+- ວິຊາ ຟີຊິກສາດ ຊັ້ນ ມ4: ທ້າວ ສີບຸນໄຊ ລໍວັນໄຊ<br>
+- ວິຊາ ຟີຊິກສາດ ຊັ້ນ ມ4: ນາງ ບົວລະພາ ສີບຸນທັນ<br>
+- ວິຊາ ພາສາລາວ ຊັ້ນ ມ7: ນາງ ນາລິນທອນ ໄຊຍະວົງ<br>
+- ວິຊາ ພາສາລາວ ຊັ້ນ ມ7: ນາງ ວິພາໄລ ຈັນທະວັງໂສ <br>
+- ວິຊາ ເຄມິສາດ ຊັ້ນ ມ7: ນາງ ສຸດາລັດ ແກ້ວບົວພາ<br>
+- ວິຊາ ເຄມີສາດ ຊັ້ນ ມ7: ນາງ ມາລິສາ ສຸລິນທອງ<br>
+- ວິຊາ ຟີຊິກສາດ ຊັ້ນ ມ7: ທ້າວ ເກດສະດາ ພົມມະຈັນ<br>
+ສະຫຼຸບ: <br>
++ ໄດ້ອັນດັບ 1 ຈຳນວນ 09 ນ້ອງ<br>
++ ໄດ້ອັນດັບ 2 ຈຳນວນ 05 ນ້ອງ<br>
++ ໄດ້ອັນດັບ 3 ຈຳນວນ 04 ນ້ອງ <br>
++ ອັນດັບຊົມເຊີຍຈຳນວນ 21 ນ້ອງ
+
+
+
+
+ </p>
+    <div class="container">
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.1.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.2.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.3.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.4.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.5.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.6.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.7.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.8.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.9.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.10.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.11.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.12.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.13.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.14.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.15.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.17/03.17.16.jpg">
+      </div>
+
+
+    </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const images = document.querySelectorAll('.image-container img');
+        
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                image.classList.toggle('enlarged');
+            });
+        });
+    });
+</script>
+</body>
+</html>

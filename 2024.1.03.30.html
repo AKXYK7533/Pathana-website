@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans Lao', sans-serif;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            text-align: center;
+        }
+        .image-container {
+            display: inline-grid;
+        }
+        .image-container img {
+            width: 250px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+        .image-container img.enlarged {
+          width: 1000px;
+            transform: scale(2);
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+    </style>
+  <meta charset="UTF-8">
+  <title>2024.03.30</title>
+</head>
+<body>
+<p>ພາບບັນຍາກາດການເຂົ້າຮ່ວມງານ "The Digital Talent Development Meetup Event" ໃນວັນເສົາ ທີ 30 ມີນາ 2024, ຢູ່ທີ່ Toyota Square, Parkson. ໂດຍການເຂົ້າຮ່ວມຂອງບັນດານ້ອງໆຕົວແທນນັກຮຽນຂອງໂຮງຮຽນ ແລະ ບັນດາຄູອາຈານຈໍານວນໜຶ່ງ.
+
+ </p>
+    <div class="container">
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.30/03.30.1.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.30/03.30.2.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.30/03.30.3.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.30/03.30.4.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.30/03.30.5.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.30/03.30.6.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.30/03.30.7.jpg">
+      </div>
+      <div class="image-container">
+        <img id = "clickableImage" src="2024.1/03.30/03.30.8.jpg">
+      </div>
+ 
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const images = document.querySelectorAll('.image-container img');
+        
+        images.forEach(image => {
+            image.addEventListener('click', () => {
+                image.classList.toggle('enlarged');
+            });
+        });
+    });
+</script>
+</body>
+</html>
